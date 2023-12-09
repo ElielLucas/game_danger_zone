@@ -12,8 +12,6 @@ func game_over():
 	get_tree().reload_current_scene()
 	
 	
-	
-
 
 func new_game():
 	$MobTime.stop()
