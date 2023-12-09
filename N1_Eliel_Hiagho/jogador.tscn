@@ -1,0 +1,329 @@
+[gd_scene load_steps=53 format=3 uid="uid://btgi78shvi3aw"]
+
+[ext_resource type="Script" path="res://jogador.gd" id="1_njou1"]
+[ext_resource type="Texture2D" uid="uid://bsdqal7nd44ml" path="res://dead_body.png" id="2_osgvq"]
+[ext_resource type="Texture2D" uid="uid://cdo00i1yhkukl" path="res://blood_splatter.png" id="3_73noi"]
+[ext_resource type="AudioStream" uid="uid://douo16qvq7buc" path="res://death_noise1.wav" id="5_mc8f5"]
+[ext_resource type="AudioStream" uid="uid://cuqybo6fjh4dt" path="res://fire-magic-6947.wav" id="5_tcu3b"]
+[ext_resource type="Texture2D" uid="uid://cgsfc1j76u1b8" path="res://chama_magia.png" id="6_in7jo"]
+[ext_resource type="Texture2D" uid="uid://yyvvqfij81w1" path="res://Sprite_jogador/survivor-idle_shotgun_0.png" id="7_8k5gi"]
+[ext_resource type="Texture2D" uid="uid://b5ukcegyf2nvm" path="res://Sprite_jogador/survivor-idle_shotgun_1.png" id="8_x6ghq"]
+[ext_resource type="Texture2D" uid="uid://cp65if2m0voas" path="res://Sprite_jogador/survivor-idle_shotgun_2.png" id="9_opnoh"]
+[ext_resource type="Texture2D" uid="uid://c0cippj3c1ote" path="res://Sprite_jogador/survivor-idle_shotgun_3.png" id="10_5d56e"]
+[ext_resource type="Texture2D" uid="uid://cp64ooxox0fuc" path="res://Sprite_jogador/survivor-idle_shotgun_4.png" id="11_cnmc7"]
+[ext_resource type="Texture2D" uid="uid://b4236yukrtivd" path="res://Sprite_jogador/survivor-idle_shotgun_5.png" id="12_6d3c5"]
+[ext_resource type="Texture2D" uid="uid://bnv7sg62yu1wu" path="res://Sprite_jogador/survivor-idle_shotgun_6.png" id="13_qnwk5"]
+[ext_resource type="Texture2D" uid="uid://bvh5etyrhdafa" path="res://Sprite_jogador/survivor-idle_shotgun_7.png" id="14_ktap7"]
+[ext_resource type="Texture2D" uid="uid://b2n3buwubpn4s" path="res://Sprite_jogador/survivor-idle_shotgun_8.png" id="15_pb86f"]
+[ext_resource type="Texture2D" uid="uid://dihqfico3lvbe" path="res://Sprite_jogador/survivor-idle_shotgun_9.png" id="16_nfupx"]
+[ext_resource type="Texture2D" uid="uid://iuooj1uwrwn6" path="res://Sprite_jogador/survivor-idle_shotgun_10.png" id="17_g3fu1"]
+[ext_resource type="Texture2D" uid="uid://caot3umf6cnnn" path="res://Sprite_jogador/survivor-idle_shotgun_11.png" id="18_781vi"]
+[ext_resource type="Texture2D" uid="uid://bp2p12imxoo84" path="res://Sprite_jogador/survivor-idle_shotgun_12.png" id="19_wkrk3"]
+[ext_resource type="Texture2D" uid="uid://rk8s8mnr3qg4" path="res://Sprite_jogador/survivor-idle_shotgun_13.png" id="20_1lp83"]
+[ext_resource type="Texture2D" uid="uid://b5opfirffowwa" path="res://Sprite_jogador/survivor-idle_shotgun_14.png" id="21_6rv2h"]
+[ext_resource type="Texture2D" uid="uid://ctrd5k4wo28ov" path="res://Sprite_jogador/survivor-idle_shotgun_15.png" id="22_5p7or"]
+[ext_resource type="Texture2D" uid="uid://7d1m00qkfs33" path="res://Sprite_jogador/survivor-idle_shotgun_16.png" id="23_q6b8f"]
+[ext_resource type="Texture2D" uid="uid://60oawehvcp8o" path="res://Sprite_jogador/survivor-idle_shotgun_17.png" id="24_reibh"]
+[ext_resource type="Texture2D" uid="uid://vjmg6js07r38" path="res://Sprite_jogador/survivor-idle_shotgun_18.png" id="25_po01k"]
+[ext_resource type="Texture2D" uid="uid://da57dyed7xecg" path="res://Sprite_jogador/survivor-idle_shotgun_19.png" id="26_ngvvd"]
+[ext_resource type="Texture2D" uid="uid://r64ll6iy4cp0" path="res://Sprite_jogador/survivor-move_shotgun_0.png" id="27_aleld"]
+[ext_resource type="Texture2D" uid="uid://ckxm8kpkevefv" path="res://Sprite_jogador/survivor-move_shotgun_1.png" id="28_os3i1"]
+[ext_resource type="Texture2D" uid="uid://g2t30t6fqgi0" path="res://Sprite_jogador/survivor-move_shotgun_2.png" id="29_mfmq0"]
+[ext_resource type="Texture2D" uid="uid://bqroatxqjxhw" path="res://Sprite_jogador/survivor-move_shotgun_3.png" id="30_3q3be"]
+[ext_resource type="Texture2D" uid="uid://bihdkw3g67os3" path="res://Sprite_jogador/survivor-move_shotgun_4.png" id="31_j32js"]
+[ext_resource type="Texture2D" uid="uid://c03c6kwm4y5jk" path="res://Sprite_jogador/survivor-move_shotgun_5.png" id="32_eeyj4"]
+[ext_resource type="Texture2D" uid="uid://d1jnyni8ner43" path="res://Sprite_jogador/survivor-move_shotgun_6.png" id="33_0grm2"]
+[ext_resource type="Texture2D" uid="uid://bfcwyfubeyve4" path="res://Sprite_jogador/survivor-move_shotgun_7.png" id="34_kwl6h"]
+[ext_resource type="Texture2D" uid="uid://bcd0ouk6sopx0" path="res://Sprite_jogador/survivor-move_shotgun_8.png" id="35_7aill"]
+[ext_resource type="Texture2D" uid="uid://cgf31sln8tmoy" path="res://Sprite_jogador/survivor-move_shotgun_9.png" id="36_pa7d4"]
+[ext_resource type="Texture2D" uid="uid://b72pg55sit5ub" path="res://Sprite_jogador/survivor-move_shotgun_10.png" id="37_icl46"]
+[ext_resource type="Texture2D" uid="uid://4qyi28rbwis0" path="res://Sprite_jogador/survivor-move_shotgun_11.png" id="38_agcu0"]
+[ext_resource type="Texture2D" uid="uid://u45ro5c6gje3" path="res://Sprite_jogador/survivor-move_shotgun_12.png" id="39_fqojy"]
+[ext_resource type="Texture2D" uid="uid://nrhwp37mwk1p" path="res://Sprite_jogador/survivor-move_shotgun_13.png" id="40_bw350"]
+[ext_resource type="Texture2D" uid="uid://dvvspub7escvo" path="res://Sprite_jogador/survivor-move_shotgun_14.png" id="41_j131s"]
+[ext_resource type="Texture2D" uid="uid://x0x5of4cbv6q" path="res://Sprite_jogador/survivor-move_shotgun_15.png" id="42_cw85d"]
+[ext_resource type="Texture2D" uid="uid://3fplxh0asmk3" path="res://Sprite_jogador/survivor-move_shotgun_16.png" id="43_gy3yr"]
+[ext_resource type="Texture2D" uid="uid://cgwjdn4k36m5k" path="res://Sprite_jogador/survivor-move_shotgun_17.png" id="44_kspku"]
+[ext_resource type="Texture2D" uid="uid://dxtgj3wo4iwft" path="res://Sprite_jogador/survivor-move_shotgun_18.png" id="45_h0aat"]
+[ext_resource type="Texture2D" uid="uid://bu3s08ra1jcjt" path="res://Sprite_jogador/survivor-move_shotgun_19.png" id="46_q5jms"]
+[ext_resource type="Texture2D" uid="uid://beakmm4xfymew" path="res://Sprite_jogador/survivor-shoot_shotgun_0.png" id="47_hwy7h"]
+[ext_resource type="Texture2D" uid="uid://dd7kexb7rrx6l" path="res://Sprite_jogador/survivor-shoot_shotgun_1.png" id="48_25qxs"]
+[ext_resource type="Texture2D" uid="uid://dmsbp1oq78huk" path="res://Sprite_jogador/survivor-shoot_shotgun_2.png" id="49_qxs8p"]
+[ext_resource type="Texture2D" uid="uid://djrrmi0bd33g6" path="res://pictureLightMask2_thumb.png" id="50_pachc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s2yvh"]
+radius = 23.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dl40a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_8k5gi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_x6ghq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_opnoh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5d56e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cnmc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6d3c5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qnwk5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ktap7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pb86f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nfupx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_g3fu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_781vi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wkrk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_1lp83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_6rv2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_5p7or")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_q6b8f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_reibh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_po01k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ngvvd")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_aleld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_os3i1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_mfmq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_3q3be")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_j32js")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_eeyj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_0grm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_kwl6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_7aill")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_pa7d4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_icl46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_agcu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_fqojy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_bw350")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_j131s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_cw85d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_gy3yr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_kspku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_h0aat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_q5jms")
+}],
+"loop": true,
+"name": &"move",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_hwy7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_25qxs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_qxs8p")
+}],
+"loop": true,
+"name": &"shoot",
+"speed": 5.0
+}]
+
+[node name="Jogador" type="CharacterBody2D" groups=["jogador"]]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_njou1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-10, 4)
+shape = SubResource("CircleShape2D_s2yvh")
+
+[node name="Graficos" type="Node2D" parent="."]
+
+[node name="Vivo" type="Sprite2D" parent="Graficos"]
+position = Vector2(-2, -14)
+
+[node name="Morto" type="Sprite2D" parent="Graficos"]
+visible = false
+z_index = -1
+texture = ExtResource("2_osgvq")
+
+[node name="BloodSplatter" type="Sprite2D" parent="Graficos/Morto"]
+self_modulate = Color(0.588235, 0, 0.0784314, 1)
+show_behind_parent = true
+position = Vector2(-6, 2)
+rotation = 0.459516
+texture = ExtResource("3_73noi")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(0, 10)
+target_position = Vector2(0, -1000)
+collision_mask = 3
+
+[node name="SomMorte" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_mc8f5")
+bus = &"sfx"
+
+[node name="SomTiro" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_tcu3b")
+bus = &"sfx"
+
+[node name="ChamaDoCano" type="Sprite2D" parent="."]
+self_modulate = Color(0.631373, 0.290196, 0.65098, 1)
+position = Vector2(0, -84)
+scale = Vector2(0.205128, 0.24355)
+texture = ExtResource("6_in7jo")
+
+[node name="Timer" type="Timer" parent="ChamaDoCano"]
+wait_time = 0.05
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="TelaMorte" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/TelaMorte"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[node name="Panel" type="Panel" parent="CanvasLayer/TelaMorte"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -83.5
+offset_top = -33.0
+offset_right = 83.5
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/TelaMorte/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.0
+offset_top = 8.0
+offset_right = 54.0
+offset_bottom = 34.0
+grow_horizontal = 2
+text = "Você Morreu!"
+
+[node name="Button" type="Button" parent="CanvasLayer/TelaMorte/Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_top = -38.0
+offset_right = 33.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Restart"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AnimatedPlayerSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 6
+position = Vector2(-16, -17)
+rotation = -1.5703
+scale = Vector2(0.35141, 0.334575)
+sprite_frames = SubResource("SpriteFrames_dl40a")
+animation = &"idle"
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-1, 0)
+shadow_enabled = true
+texture = ExtResource("50_pachc")
+texture_scale = 5.0
+
+[connection signal="timeout" from="ChamaDoCano/Timer" to="ChamaDoCano" method="hide"]

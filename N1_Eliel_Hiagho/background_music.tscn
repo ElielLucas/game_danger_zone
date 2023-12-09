@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4irfkmyssfdk"]
+
+[ext_resource type="AudioStream" uid="uid://dfyjx1pd67l4t" path="res://orchestrawav-26158_1.wav" id="1_nb2sp"]
+
+[node name="background_music" type="AudioStreamPlayer"]
+stream = ExtResource("1_nb2sp")
+autoplay = true
